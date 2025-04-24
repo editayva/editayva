@@ -5,7 +5,7 @@ i’m learning how to build tools that blend design, content, and automation —
 
 ### what i'm working on:
 - ✨ launching tools for marketers and creators  
-- ⚙️ building [F.fect Studio](https://yourlink.com) — a soft marketing platform powered by AI  
+- ⚙️ building [F.fect Studio](https://ffectstudio.com) — a soft marketing platform powered by AI  
 - 💡 automating content workflows for modern brands
 
 ### current stack:
