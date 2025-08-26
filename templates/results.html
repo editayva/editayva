@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Recipes</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 40px; }
+        .cards { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .card { border: 1px solid #ccc; padding: 15px; width: 250px; border-radius: 8px; }
+        .card b { display: block; margin-bottom: 10px; }
+        .card em { display: block; margin-top: 10px; }
+        a.btn { display: inline-block; margin-top: 30px; padding: 10px 20px; border: 1px solid #333; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <h1>🍴 Mini Recipe Generator – Served Fresh by Boncheeks 🍴</h1>
+    <div class="cards">
+        {% for recipe in recipes %}
+        <div class="card">
+            <b>{{ recipe.name }}</b>
+            <p>{{ recipe.ingredients }}</p>
+            <em>{{ recipe.caption }}</em>
+        </div>
+        {% endfor %}
+    </div>
+    <a href="{{ url_for('index') }}" class="btn">Try another</a>
+</body>
+</html>

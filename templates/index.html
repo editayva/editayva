@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mini Recipe Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 40px; }
+        form { display: inline-block; margin-top: 20px; }
+        label { display: block; margin-bottom: 10px; }
+        input { padding: 8px; margin-bottom: 15px; width: 250px; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <h1>🍴 Mini Recipe Generator – Served Fresh by Boncheeks 🍴</h1>
+    <form method="post" action="{{ url_for('generate') }}">
+        <label>
+            Ingredient:
+            <input type="text" name="ingredient" required>
+        </label>
+        <label>
+            Vibe/Season/Theme:
+            <input type="text" name="vibe" required>
+        </label>
+        <button type="submit">Generate</button>
+    </form>
+</body>
+</html>
